@@ -17,6 +17,8 @@ public class HomePage  extends WebAPI {
     @FindBy (how = How.XPATH, using =searchTextLocator ) public WebElement searchText;
 
     // Action Method
+
+
     public void searchBox() throws InterruptedException {
         // Enter productName
         searchBox.sendKeys(productName);
@@ -24,7 +26,7 @@ public class HomePage  extends WebAPI {
         // Click on searchButton
         searchButton.click();
     }
-
+// first commit
 
 public void searchBox1(){
     typeOnElement(searchBoxLocator,"Hand Sanitizer");
