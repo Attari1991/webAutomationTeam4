@@ -96,6 +96,7 @@ public class WebAPI {
         return calendar.getTime();
     }
 
+
     public static void captureScreenshot(WebDriver driver, String screenshotName) {
         DateFormat df = new SimpleDateFormat("(yyMMddHHmmssZ)");
         //DateFormat df = new SimpleDateFormat("(MM.dd.yyyy-HH:mma)");
@@ -143,6 +144,12 @@ public class WebAPI {
         driver.manage().deleteAllCookies();
         driver.get(url);
         driver.manage().window().maximize();
+
+        //added by me
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        //This will scroll the web page till end.
+        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+
     }
 
     public WebDriver getLocalDriver(String OS, String browserName) {
@@ -431,7 +438,7 @@ public class WebAPI {
         try {
             WebElement element = driver.findElement(By.cssSelector(locator));
             Actions action = new Actions(driver);
-            Actions hover = action.moveToElement(element);
+             action.moveToElement(element).build().perform();
         } catch (Exception ex) {
             System.out.println("First attempt has been done, This is second try");
             WebElement element = driver.findElement(By.cssSelector(locator));
@@ -444,7 +451,7 @@ public class WebAPI {
         try {
             WebElement element = driver.findElement(By.xpath(locator));
             Actions action = new Actions(driver);
-            Actions hover = action.moveToElement(element);
+           action.moveToElement(element).build().perform();
         } catch (Exception ex) {
             System.out.println("First attempt has been done, This is second try");
             WebElement element = driver.findElement(By.xpath(locator));
