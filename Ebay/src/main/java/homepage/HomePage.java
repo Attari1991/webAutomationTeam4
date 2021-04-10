@@ -308,6 +308,23 @@ public class HomePage  extends WebAPI {
     }
 
 
+    public void SearchElementUsingExcel() throws Exception {
+        List<String>elementExcel = DataSource.getItemsListFromExcel();
+        String item= elementExcel.get(4);
+        searchBox.sendKeys(item);
+        searchButton.click();
+    }
+
+
+    public void SearchElementUsingDataBases() throws Exception {
+        DataSource.insertDataIntoDB();
+        List<String> elementDB=DataSource.getItemsListFromDB();
+        String item= elementDB.get(3);
+        searchBox.sendKeys(item);
+        searchButton.click();
+    }
+
+
 
 
 

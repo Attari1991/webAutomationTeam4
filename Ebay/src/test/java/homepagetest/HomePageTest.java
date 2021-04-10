@@ -31,7 +31,7 @@ public class HomePageTest extends WebAPI {
     }
 
 
-    @Ignore
+//    @Ignore
     @Test(priority = 1)//(enabled = false)
     public void testSearchBox() throws InterruptedException {
         //getInit();
@@ -44,7 +44,7 @@ public class HomePageTest extends WebAPI {
     }
 
 
-    @Ignore
+//    @Ignore
     @Test(priority = 2)//(enabled = false)
     public void testCheckDailyDeals(){
         // Call Action method by reference variable
@@ -56,7 +56,7 @@ public class HomePageTest extends WebAPI {
     }
 
 
-    @Ignore
+//    @Ignore
     @Test(priority = 3)
     public void testShoppingCart(){
       homePage.checkShoppingCart();
@@ -65,7 +65,7 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText,expectedText,"Product does not match");
     }
 
-    @Ignore
+//    @Ignore
     @Test(priority = 4)
     public void testCheCkAddToCart() throws InterruptedException {
         homePage.checkAddToCart();
@@ -75,7 +75,7 @@ public class HomePageTest extends WebAPI {
     }
 
 
-    @Ignore
+//    @Ignore
     @Test(priority = 5)
     public void testCheckCommentsWin() throws InterruptedException {
         homePage.checkCommentsWin();
@@ -85,7 +85,7 @@ public class HomePageTest extends WebAPI {
     }
 
 
-    @Ignore
+//    @Ignore
     @Test(priority = 6)
     public void testSendComments() throws InterruptedException {
         homePage.sendComments();
@@ -94,7 +94,7 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText,expectedText,"Product does not match");
     }
 
-    @Ignore
+//    @Ignore
     @Test(priority = 7)
     public void testcheckBooks() throws InterruptedException {
         homePage.checkBooks();
@@ -103,7 +103,7 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText,expectedText,"Product does not match");
     }
 
-    @Ignore
+//    @Ignore
     @Test(priority = 8)
     public void  testcheckEverythingElse1() throws InterruptedException {
         homePage.checkEverythingElse();
@@ -113,7 +113,7 @@ public class HomePageTest extends WebAPI {
     }
 
 
-    @Ignore
+//    @Ignore
     @Test(priority = 9)
     public void testCheckMyEbay() throws InterruptedException {
         homePage.checkMyEbay();
@@ -122,28 +122,28 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText,expectedText,"Product does not match");
     }
 
-    @Ignore
+//    @Ignore
     @Test(priority = 10)
     public void testAllCategoriesList() throws InterruptedException {
         homePage.allCategoriesList();
         assertEqualByXpath("//*[@id=\"gh-cat\"]/option[3]","Art");
     }
 
-    @Ignore
+//    @Ignore
     @Test(priority = 11)
     public void testmotors() throws InterruptedException {
         homePage.motors();
         assertEqualByXpath("/html/body/div[3]/div[2]/h1","Boats");
     }
 
-   @Ignore
+//   @Ignore
     @Test(priority = 12)
     public void testCheckAdvanced() throws InterruptedException {
         homePage.checkAdvanced();
         assertEqualByXpath(advancedSearchLocator,"Advanced Search");
     }
 
-    @Ignore
+//    @Ignore
     @Test(priority = 13)
     public void testSelectElmFromAdvanced() throws InterruptedException {
         homePage.selectElmFromAdvanced();
@@ -151,62 +151,62 @@ public class HomePageTest extends WebAPI {
 
     }
 
-   @Ignore
+//   @Ignore
     @Test(priority = 14)
     public void testcheckSellYourKicks() throws InterruptedException {
         homePage.checkSellYourKicks();
        assertEqualByXpath(SellYourKicksLocator,"");
     }
-    @Ignore
+//    @Ignore
     @Test(priority = 15)
     public void testClickOnImage(){
         homePage.clickOnImage();
         assertEqualByXpath("//*[@id=\"refit-spf-container\"]/div[1]/h1/a","Deals");//Deals xpath
     }
 
-    @Ignore
+//    @Ignore
     @Test(priority = 16)
     public void testcheckSaved() throws InterruptedException {
         homePage.checkSaved();
         assertEqualByXpath(savedLocator,"Saved");
     }
 
-    @Ignore
+//    @Ignore
     @Test(priority = 17)
     public void testCheckFashion() throws InterruptedException {
         homePage.checkFashion();
         assertEqualByXpath("/html/body/div[3]/div[2]/h1/span","Health");//HealthText xpath
     }
 
-    @Ignore
+//    @Ignore
     @Test(priority = 18)
     public void testCheckElectronics() throws InterruptedException {
         homePage.checkElectronics();
         assertEqualByXpath("/html/body/div[3]/div[2]/nav/ol/li[3]/span","Laptops & Netbooks");//HealthText xpath
     }
 
-    @Ignore
+//    @Ignore
     @Test(priority = 19)
     public void testMoveToRigth() throws InterruptedException {
         homePage.movetoRigth();
         assertEqualByXpath(moveToRightLocator,"");
     }
 
-    @Ignore
+//    @Ignore
     @Test(priority = 20)
     public void testSignIn() throws InterruptedException {
      homePage.signIn();
    assertEqualByXpath("#pass","");
     }
 
-    @Ignore
+//    @Ignore
     @Test(priority = 21)
     public void testCheckSeeAll(){
         homePage.checkseeAll();
         assertEqualByXpath(sportingGoodsLocator,"Sporting Goods");
     }
 
-    @Ignore
+//    @Ignore
     @Test(priority = 22)
     public void testCheckMusic() throws InterruptedException {
         homePage.checkMusic();
@@ -215,7 +215,7 @@ public class HomePageTest extends WebAPI {
 
 
 
-    //@Ignore
+//    @Ignore
     @Test(priority = 23)
     public void testCheckCountries() throws InterruptedException {
         homePage.checkCountries();
@@ -231,19 +231,38 @@ public class HomePageTest extends WebAPI {
                "Site map");//france
     }
 
-   @Ignore
+//   @Ignore
     @Test(priority = 24)
     public void testCheckShopByCategory() throws InterruptedException {
         homePage.checkShopByCategory();
         assertEqualByXpath(collectioniblesAndArtTextLocator,"Collectibles & Art");
     }
 
-    @Ignore
+//    @Ignore
     @Test(priority = 25)
     public void testCheckHomeAndGarden() throws InterruptedException {
        homePage.checkHomeAndGarden();
        //assertEqualByXpath(toolsTextLocator, "Tools & Workshop Equipment");
    }
+
+
+    @Test
+    public void testSearchElementUsingExcel() throws Exception {
+        homePage.SearchElementUsingExcel();
+        String expectedTitle="Mens shirt | eBay";
+        String actualTitle = driver.getTitle();
+        Assert.assertEquals(actualTitle,expectedTitle, "Title does not match");
+    }
+
+
+
+    @Test
+    public void testSearchElementUsingDatabses() throws Exception {
+        homePage.SearchElementUsingDataBases();
+        String expectedTitle="Mens shirt | eBay";
+        String actualTitle = driver.getTitle();
+        Assert.assertEquals(actualTitle,expectedTitle, "Title does not match");
+    }
 
 
 
