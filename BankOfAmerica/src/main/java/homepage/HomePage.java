@@ -37,7 +37,7 @@ public class HomePage  extends WebAPI {
      @FindBy(how = How.XPATH, using =logoLocator)public WebElement logo;
      //============open Account option
      @FindBy(how = How.XPATH, using =openAnAccountLocator)public WebElement OpenAccount;
-     @FindBy(how = How.XPATH, using =thatsFitsYourNeedsLocator)public WebElement thatsFitsYourNeeds;
+     @FindBy(how = How.XPATH, using =thatsFitsYourNeedsLocator)public WebElement thatFitsYourNeeds;
      //========contact us option
      @FindBy(how = How.XPATH, using =contactUsLocator)public WebElement contactUs;
      @FindBy(how = How.XPATH, using =requestAPaymentDeferralLocator)public WebElement RequestAPaymentDeferral;
@@ -45,22 +45,10 @@ public class HomePage  extends WebAPI {
      @FindBy(how = How.XPATH, using =stayFlexibleWithBankOfTextLocator)public WebElement stayFlexibleWithBankOf;
      //=====saving option
      @FindBy(how = How.XPATH, using =onlineBankingLocator)public WebElement onlineBanking;
-    @FindBy(how = How.XPATH, using =TakeTextLocator)public WebElement TakeText;
-    @FindBy(how = How.XPATH, using =clientInformationTextLocator)public WebElement clientInformationText;
-    @FindBy(how = How.XPATH, using =getALowRateOnPurchaseTextLocator)public WebElement getALowRateOnPurchaseText;
-    @FindBy(how = How.XPATH, using =selectYourStateLocator)public WebElement selectYourState;
-
-
-
-
-
-
-
-
-
-
-
-
+     @FindBy(how = How.XPATH, using =TakeTextLocator)public WebElement TakeText;
+     @FindBy(how = How.XPATH, using =clientInformationTextLocator)public WebElement clientInformationText;
+     @FindBy(how = How.XPATH, using =getALowRateOnPurchaseTextLocator)public WebElement getALowRateOnPurchaseText;
+     @FindBy(how = How.XPATH, using =selectYourStateLocator)public WebElement selectYourState;
 
 
 
