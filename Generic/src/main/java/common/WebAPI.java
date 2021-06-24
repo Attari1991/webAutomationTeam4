@@ -78,7 +78,7 @@ public class WebAPI {
             ExtentTestManager.getTest().log(LogStatus.SKIP, "Test Skipped");
         }
         ExtentTestManager.endTest();
-        extent.flush();
+       // extent.flush();
         if (result.getStatus() == ITestResult.FAILURE) {
             captureScreenshot(driver, result.getName());
         }

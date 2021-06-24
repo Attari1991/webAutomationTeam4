@@ -47,18 +47,18 @@
 <!--        <classes>-->
 <!--            <class name="homepagetest.HomePageTest">-->
 <!--                <methods>-->
-<!--                    &lt;!&ndash;               Test case include or exclude&ndash;&gt;-->
-<!--                    &lt;!&ndash;               <exclude name="testSearchbox"></exclude>&ndash;&gt;-->
-<!--                    &lt;!&ndash;               <include name="testLogin"></include>&ndash;&gt;-->
-<!--                </methods>-->
+<!--             &lt;!&ndash;               Test case include or exclude&ndash;&gt;-->
+        <!--                    &lt;!&ndash;               <exclude name="testSearchbox"></exclude>&ndash;&gt;-->
+        <!--                    &lt;!&ndash;               <include name="testLogin"></include>&ndash;&gt;-->
+        <!--                </methods>-->
 
-<!--            </class>-->
+        <!--            </class>-->
 
 
-<!--        </classes>-->
-<!--    </test>-->
+        <!--        </classes>-->
+        <!--    </test>-->
 
-</suite>
+        </suite>
 
 
 
